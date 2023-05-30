@@ -5,6 +5,7 @@ keymap.set("n", "<leader>pv", vim.cmd.Ex)
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 
+keymap.set("n", "<leader>txa", ":tabonly<CR>", { silent = true }) -- close all other tabs
 keymap.set("n", "<leader>to", ":tabnew<CR>", { silent = true }) -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>", { silent = true }) -- close current tab
 keymap.set("n", "<leader><Right>", ":tabn<CR>", { silent = true }) --  go to next tab
