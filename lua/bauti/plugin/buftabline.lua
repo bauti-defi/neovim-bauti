@@ -6,7 +6,7 @@ end
 vim.api.nvim_command("highlight BrightCurrent guifg=#ffffff guibg=#fc514e")
 vim.api.nvim_command("highlight BrightNormal guifg=#ffffff guibg=#a1cd5e")
 vim.api.nvim_command("highlight BrightActive guifg=#ffffff guibg=#82aaff")
-vim.api.nvim_command("highlight BrightSpacing guifg=#ffffff guibg=#c792ea")
+vim.api.nvim_command("highlight BrightSpacing guifg=#011627 guibg=#011627")
 vim.api.nvim_command("highlight BrightModifiedCurrent guifg=#ffffff guibg=#fc514e")
 vim.api.nvim_command("highlight BrightModifiedNormal guifg=#ffffff guibg=#011627")
 vim.api.nvim_command("highlight BrightModifiedActive guifg=#ffffff guibg=#fc514e")
