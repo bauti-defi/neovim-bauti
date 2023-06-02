@@ -39,7 +39,6 @@ function closeAllExceptCurrent()
 	if not current_index then
 		return
 	end
-
 	local buffers = b.get_numbers()
 	local current_buffer = buffers[current_index]
 	for _, buffer in ipairs(buffers) do
