@@ -34,9 +34,10 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 keymap.set("n", "<leader>[", "<cmd>BufPrev<CR>")
 keymap.set("n", "<leader>]", "<cmd>BufNext<CR>")
 
-keymap.set("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<CR><cmd>w <CR>") -- save file with Ctrl+s
+keymap.set("n", "<leader><leader>s", "<cmd>lua vim.lsp.buf.format()<CR><cmd>w <CR>") -- save file with Ctrl+s
 keymap.set("n", "<C-a>", "<cmd> %y+<CR>") -- copy all text to clipboard
 keymap.set("n", "<C-x>", "<cmd> %d<CR>") -- cut all text to clipboard
 
 keymap.set("n", "<leader>q", "<cmd>bdelete<CR>") -- quit current window
 keymap.set("n", "<leader>Q", "<cmd>qa<CR>") -- quit all windows
+keymap.set("n", "<leader>QA", "<cmd>q!<CR>") -- force quite current window

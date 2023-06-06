@@ -50,3 +50,14 @@ function closeAllExceptCurrent()
 end
 
 vim.keymap.set("n", "<leader>c", ":lua closeAllExceptCurrent()<CR>", { noremap = true, silent = true })
+
+-- close all tabs
+function closeAll()
+	local buffers = b.get_numbers()
+	for _, buffer in ipairs(buffers) do
+		vim.api.nvim_buf_delete(buffer, { force = true })
+	end
+	vim.cmd("redrawtabline")
+end
+
+vim.keymap.set("n", "<leader>ca", ":lua closeAll()<CR>", { noremap = true, silent = true })
